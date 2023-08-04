@@ -159,3 +159,73 @@ footer {
   button:hover {
     background-color: #0056b3;
   }
+
+  /* Default styles for larger screens */
+@media (min-width: 768px) {
+  /* Add any styles you want to apply for larger screens here */
+}
+
+/* Styles for medium-sized screens */
+@media (max-width: 767px) {
+  header {
+    height: 60vh; /* Reduce the header height on medium-sized screens */
+  }
+
+  h1 {
+    font-size: 2.5rem; /* Reduce the font size of h1 on medium-sized screens */
+  }
+
+  h3 {
+    font-size: 1.5rem; /* Reduce the font size of h3 on medium-sized screens */
+  }
+
+  .navbar {
+    height: 50px; /* Reduce the navbar height on medium-sized screens */
+  }
+
+  .logo {
+    font-size: 1.2rem; /* Reduce the font size of the logo on medium-sized screens */
+  }
+
+  footer {
+    padding: 15px; /* Reduce the footer padding on medium-sized screens */
+  }
+
+  .contact-form {
+    width: 90%; /* Make the contact form width 90% on medium-sized screens */
+    padding: 30px; /* Increase the padding of the contact form on medium-sized screens */
+  }
+}
+
+/* Styles for smaller screens */
+@media (max-width: 480px) {
+  header {
+    height: 50vh; /* Reduce the header height on smaller screens */
+  }
+
+  h1 {
+    font-size: 2rem; /* Reduce the font size of h1 on smaller screens */
+  }
+
+  h3 {
+    font-size: 1.2rem; /* Reduce the font size of h3 on smaller screens */
+  }
+
+  .navbar {
+    height: 40px; /* Reduce the navbar height on smaller screens */
+    padding: 0 10px; /* Reduce the padding of the navbar on smaller screens */
+  }
+
+  .logo {
+    font-size: 1rem; /* Reduce the font size of the logo on smaller screens */
+  }
+
+  footer {
+    padding: 10px; /* Reduce the footer padding on smaller screens */
+  }
+
+  .contact-form {
+    width: 70%; /* Make the contact form width 100% on smaller screens */
+    padding: 40px; /* Reduce the padding of the contact form on smaller screens */
+  }
+}
