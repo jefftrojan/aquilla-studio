@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom"; // Import NavLink
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { menu, close } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -26,6 +26,7 @@ const Navbar = () => {
   }, []);
 
   return (
+    <>
     <nav
       className={`${
         styles.paddingX
@@ -34,7 +35,7 @@ const Navbar = () => {
       }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
-        <Link
+        <NavLink
           to='/'
           className='flex items-center gap-2'
           onClick={() => {
@@ -46,7 +47,7 @@ const Navbar = () => {
             Aquila Studio &nbsp;
             <span className='sm:block hidden'> </span>
           </p>
-        </Link>
+        </NavLink>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((nav) => (
@@ -57,7 +58,13 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <NavLink
+                to={nav.id}
+                exact
+                activeClassName="text-white underline"
+              >
+                {nav.title}
+              </NavLink>
             </li>
           ))}
         </ul>
@@ -73,7 +80,7 @@ const Navbar = () => {
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 bg-indigo-900 absolute top-20 right-0 mx-4 my-2 min-w-[400px] z-10 rounded-xl`}
+            } p-6 bg-indigo-900 absolute top-20 right-0 mx-4 my-2 min-w-[350px] z-10 rounded-xl`}
           >
             <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
               {navLinks.map((nav) => (
@@ -87,14 +94,23 @@ const Navbar = () => {
                     setActive(nav.title);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  <NavLink
+                    to={nav.id}
+                    exact
+                    activeClassName="text-white"
+                  >
+                    {nav.title}
+                  </NavLink>
                 </li>
               ))}
             </ul>
           </div>
         </div>
       </div>
+      <div className="mt-10" />
     </nav>
+
+    </>
   );
 };
 

@@ -1,9 +1,12 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
+import OurServices from "./OurServices";
+import Whoweare from "./Whoweare";
 
 const Hero = () => {
   return (
+    <>
     <section className="relative w-full h-screen mx-auto">
       <div
         className={`absolute inset-0 top-[120px] md:top-[60px] max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 ${styles.paddingX} flex flex-col justify-center items-center`}
@@ -23,7 +26,20 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
     </section>
+
+
+    <Whoweare />
+
+    <div className="mt-20" />
+    
+    <OurServices />
+    
+
+
+    </>
+    
   );
 };
 

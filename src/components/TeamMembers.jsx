@@ -15,11 +15,7 @@ const TeamMember = ({ name, role, image }) => (
 
 const MeetTheTeam = () => {
   const teamMembers = [
-    {
-      name: "Aquila Adegbola",
-      role: "CEO",
-      image: aquila, 
-    },
+ 
     {
       name: "Damilola Jacob",
       role: "Partnership Lead",
@@ -30,6 +26,11 @@ const MeetTheTeam = () => {
     //   role: "Graphic Designer",
     //   image: jubril, 
     // },
+    {
+      name: "Aquila Adegbola",
+      role: "CEO",
+      image: aquila, 
+    },
     {
       name: "Cynthia Isaro",
       role: "Program Lead",

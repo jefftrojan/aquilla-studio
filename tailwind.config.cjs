@@ -4,7 +4,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx}"],
   mode: "jit",
   theme: {
-    extend: {
+    extend: { 
+      safelist: ['animate-[fade-in_1s_ease-in-out]', 'animate-[fade-in-down_1s_ease-in-out]']
+      ,
       fontFamily: {
         'primary': ["Orbitron", "sans"],
       },

@@ -9,61 +9,6 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const Program = () => {
-  const formRef = useRef();
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const [loading, setLoading] = useState(false);
-
-  const handleChange = (e) => {
-    const { target } = e;
-    const { name, value } = target;
-
-    setForm({
-      ...form,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
-
-    emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "AquilaStudio",
-          from_email: form.email,
-          to_email: "a.adegbola@alumni.alueducation.com",
-          message: form.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
-        }
-      );
-  };
 
   return (
     <>
@@ -80,7 +25,7 @@ const Program = () => {
           <h2 className="mt-10 md:mt-0 text-3xl md:text-4xl lg:text-5xl font-bold leading-normal">
             Game Development Program
           </h2>
-          <div className="mt-10" />
+          <div className="mt-lg:mt-32 md:mt-20" />
 
           <p className="mt-4 text-lg font-bold lg:text-xl text-secondary leading-normal">
             G4DT is a learning program to empower tech talents to learn the principles of game development, and create new tech opportunities toward career pathways.
@@ -99,7 +44,6 @@ const Program = () => {
             G4DT is a learning program to empower tech talents to learn the principles of game development, and create new tech opportunities toward career pathways.
           </p>
         </div>
-        <div className="mt-20"/>
 
 
         {/* Right Column */}
@@ -138,7 +82,7 @@ const Program = () => {
 
         
       </div>
-      <div className="mt-10 md:mt-20 lg:mt-32 flex flex-col md:flex-row-reverse xl:flex-row-reverse">
+      <div className="mt-10 md:mt-20 lg:mt-32 flex flex-col md:flex-row-reverse xl:flex-row-reverse justify-center">
         <img
           src={gd4tkid}
           alt="image"
@@ -147,7 +91,7 @@ const Program = () => {
         /> 
   <div className="flex flex-col mt-10 items-center justify-center text-center">
           <h4 className="mt-10 md:mt-0 text-2xl md:text-2xl lg:text-3xl font-bold leading-normal">
-              Start your application to join a thriving community.
+              Start your application to join a thriving community...  
             </h4>
           <div className="mt-10" />
 
@@ -157,9 +101,8 @@ const Program = () => {
 
       <hr className="my-10 md:my-20 lg:my-32" />
 
-      {/* Add the ContactForm component here */}
     </>
   );
 };
 
-export default SectionWrapper(Program, "Program");
+export default Program;
