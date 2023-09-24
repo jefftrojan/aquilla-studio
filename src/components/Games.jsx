@@ -71,7 +71,7 @@ const Games = () => {
           className='mt-3 text-secondary text-[18px] max-w-3xl leading-[32px]'
         >
           
-          Now in our 2nd year, we've grown to become one of Rwanda's fast-paced game studios experiencing rapid growth. Our aim is simply to produce joyfully compelling stories that are packed full of characters through creating beautiful animation. Moreover, we aim to do this through building a positive working environment filled with talented, happy developers and designers crafting content they are truly proud of.
+          As a game studio, We believe in fun game experiences enhanced by creativity and passion crafted by authentic and long-lasting interactive entertainments.
 
         </motion.p>
       </div>
