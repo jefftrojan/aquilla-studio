@@ -28,7 +28,7 @@ const MeetTheTeam = () => {
     // },
     {
       name: "Aquila Adegbola",
-      role: "CEO",
+      role: "Game Designer",
       image: aquila, 
     },
     {
@@ -41,11 +41,11 @@ const MeetTheTeam = () => {
     //   role: "UI/UX Designer",
     //   image: jubril,
     // },
-    // {
-    //   name: "Adetola Thompson",
-    //   role: "CEO",
-    //   image: adetola, 
-    // },
+    {
+      name: "Adetola Thompson",
+      role: "Communication Designer",
+      image: adetola, 
+    },
   ];
 
   return (
@@ -53,7 +53,7 @@ const MeetTheTeam = () => {
       <div className="mt-20" />
       <h2 className="text-3xl font-semibold ">Meet The Team</h2>
       <div className="mt-10" />
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid grid-cols-4 gap-5">
         {teamMembers.map((member, index) => (
           <TeamMember key={index} {...member} />
         ))}
