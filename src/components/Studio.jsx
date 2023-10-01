@@ -14,6 +14,8 @@ const Studio = () => {
     <>
 
 
+    <div className="container mx-auto p-4">
+      <div className="mt-20" />
     <motion.div variants={textVariant()}>
       <h2 className={styles.sectionHeadText}>Studio.</h2>
     </motion.div>
@@ -75,6 +77,7 @@ Aquila Studio is an independent video game studio dedicated to creating innovati
 {/* Meet the team */}
 <MeetTheTeam />
 <div className="mt-20" />
+    </div>
 
 
 

@@ -61,6 +61,8 @@ const ProjectCard = ({
 const Games = () => {
   return (
     <>
+      <div className="container mx-auto p-4">
+        <div className="mt-20" />
       <motion.div variants={textVariant()}>
         <h2 className={`${styles.sectionHeadText}`}>Our Games.</h2>
       </motion.div>
@@ -102,8 +104,8 @@ const Games = () => {
         <img
         src={eranko}
   alt="image" 
-  className="mx-auto mt-10 rounded-lg" 
-  style={{width: "1500px", height: "600px"}}  />
+  className=" mt-10 rounded-lg sm:w-full lg:w-full lg:h-[850px] lg:object-cover lg:object-center lg:object-top " 
+ />
 
       </div>
 
@@ -139,6 +141,7 @@ const Games = () => {
 </div>
 
 <hr className='my-20' />
+      </div>
 
 
       

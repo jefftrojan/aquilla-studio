@@ -6,7 +6,7 @@ const TeamMember = ({ name, role, image }) => (
     <img
       src={image}
       alt={`${name}'s headshot`}
-      className="w-full h-full mb-2 rounded-[38px] "
+      className="w-full h-full mb-2 rounded-[38px] object-cover object-center "
     />
     <h3 className="text-lg font-semibold">{name}</h3>
     <p className="text-sm text-white-600">{role}</p>

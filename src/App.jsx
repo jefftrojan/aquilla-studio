@@ -37,21 +37,18 @@ const App = () => {
       <PreLoader />
       <div className='relative z-0 bg-primary'>
           <Navbar />
+          <StarsCanvas />
+
+
+
+                <Routes>
+                  <Route path="/" element={<motion.div> <Hero /> </motion.div>} />
+                  <Route path="/studio" element={<motion.div> <Studio /> </motion.div>} />
+                  <Route path="/program" element={<motion.div> <Program /> </motion.div>} />
+                  <Route path="/games" element={<motion.div> <Games /> </motion.div>} />
+                </Routes>
+            
           
-          <motion.div 
-          
-          className="container mx-auto p-4">
-          <div className="mt-10" />
-
-
-
-            <Routes>
-              <Route path="/" element={<motion.div> <Hero /> </motion.div>} />
-              <Route path="/studio" element={<motion.div> <Studio /> </motion.div>} />
-              <Route path="/program" element={<motion.div> <Program /> </motion.div>} />
-              <Route path="/games" element={<motion.div> <Games /> </motion.div>} />
-            </Routes>
-          </motion.div>
         </div>
 
         

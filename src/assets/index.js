@@ -15,6 +15,7 @@ import eranko from "./eranko-game.png";
 import simage1 from "./service-card-image-1.jpg";
 import simage2 from "./simage2.jpg";
 import simage3 from "./service-card-image-3.jpg";
+import girlheadset from "./girlheadset.jpg";
 
 export {
   logo,
@@ -32,6 +33,7 @@ export {
   aquila,
   adetola,
   cynthia,
-  jubril
+  jubril,
+  girlheadset,
   
 };

@@ -7,9 +7,12 @@ import Whoweare from "./Whoweare";
 const Hero = () => {
   return (
     <>
-    <section className="bg-hero-pattern bg-cover bg-no-repeat bg-center relative w-full h-screen mx-auto">
+
+
+
+    <section className=" bg-hero-pattern bg-cover bg-no-repeat bg-center relative w-full h-screen">
       <div
-        className={`absolute inset-0 top-[120px] md:top-[60px] max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 ${styles.paddingX} flex flex-col justify-center items-center`}
+        className={`absolute inset-0 top-[120px] md:top-[60px] max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 ${styles.Padding} flex flex-col justify-center items-center`}
       >
         <div className="text-white text-center">
           <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold font-orbitron">
@@ -19,15 +22,20 @@ const Hero = () => {
          
         </div>
       </div>
+      
 
     </section>
+    <div className="container mx-auto p-4">
 
+    <div className="mt-20" />
 
     <Whoweare />
 
     <div className="mt-20" />
     
     <OurServices />
+
+    </div>
     
 
 
