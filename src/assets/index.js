@@ -13,7 +13,7 @@ import greenery from "./greenery.png";
 import igihe from "./igihe-game.png";
 import eranko from "./eranko-game.png";
 import simage1 from "./service-card-image-1.jpg";
-import simage2 from "./service-card-image-2.jpg";
+import simage2 from "./simage2.jpg";
 import simage3 from "./service-card-image-3.jpg";
 
 export {

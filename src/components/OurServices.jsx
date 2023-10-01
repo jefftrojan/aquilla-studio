@@ -18,7 +18,7 @@ const ProjectCard = ({
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <div
-        className={`flex w-full bg-tertiary p-6 rounded-2xl  ${
+        className={`flex w-full bg-midnight p-6 rounded-2xl  ${
           isEvenIndex ? "flex-col md:flex-row" : "flex-col-reverse md:flex-row-reverse"
         }`}
       >

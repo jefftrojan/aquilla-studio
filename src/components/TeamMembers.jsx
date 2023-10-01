@@ -6,7 +6,7 @@ const TeamMember = ({ name, role, image }) => (
     <img
       src={image}
       alt={`${name}'s headshot`}
-      className="w-full h-full mb-2 rounded-[38px]"
+      className="w-full h-full mb-2 rounded-[38px] "
     />
     <h3 className="text-lg font-semibold">{name}</h3>
     <p className="text-sm text-white-600">{role}</p>
@@ -53,7 +53,7 @@ const MeetTheTeam = () => {
       <div className="mt-20" />
       <h2 className="text-3xl font-semibold ">Meet The Team</h2>
       <div className="mt-10" />
-      <div className="grid grid-cols-4 gap-5">
+      <div className="grid lg:grid-cols-4 gap-5 md:grid-cols-4 sm:grid-cols-1">
         {teamMembers.map((member, index) => (
           <TeamMember key={index} {...member} />
         ))}

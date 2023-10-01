@@ -56,8 +56,7 @@ Aquila Studio is a Rwanda-based indie game studio on a mission to create an ecos
   <img
   src="https://cdna.artstation.com/p/assets/images/images/051/076/412/large/diane-nuty-tribes-bestshot-newaya-02.jpg"
   alt="image" 
-  className="mx-auto mt-10 rounded-lg" 
-  style={{width: "1500px", height: "600px"}}
+  className="mx-auto mt-10 rounded-lg lg:w-[100%] md:w-[100%] sm:w-[100%] w-[100%]" 
   
   
   />

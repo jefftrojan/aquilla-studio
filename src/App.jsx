@@ -36,14 +36,12 @@ const App = () => {
     <Router>
       <PreLoader />
       <div className='relative z-0 bg-primary'>
-        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
           <Navbar />
           
           <motion.div 
           
           className="container mx-auto p-4">
           <div className="mt-10" />
-          <StarsCanvas />
 
 
 
@@ -60,7 +58,6 @@ const App = () => {
         <motion.div {...animationProps}>
           <Footer />
         </motion.div>
-      </div>
     </Router>
     </>
   );
