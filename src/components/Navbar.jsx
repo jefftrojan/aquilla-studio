@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom"; // Import NavLink
+import { NavLink } from "react-router-dom"; 
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { menu, close } from "../assets";
+import { menu, close, logo } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -44,7 +44,9 @@ const Navbar = () => {
           }}
         >
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Aquila Studio &nbsp;
+          <img src={logo} alt='logo' className='w-[120px] h-[80px] t' />
+ &nbsp;
+           
             <span className='sm:block hidden'> </span>
           </p>
         </NavLink>
