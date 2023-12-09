@@ -109,7 +109,26 @@ const Program = () => {
   </div>
 </div>
 
+<div className="w-[1440px] h-[895px] pl-[120px] pr-[121px] pt-[90px] pb-[131px] bg-slate-950 flex-col justify-center items-center gap-[172px] inline-flex">
+  <div className="w-[386px] text-neutral-100 text-5xl font-black font-['Orbitron']">What we do</div>
+  <div className="self-stretch justify-center items-center gap-10 inline-flex">
+    <div className="w-[373px] px-[65px] pt-[60px] pb-[191px] bg-cyan-300 rounded-[20px] flex-col justify-center items-center gap-[51px] inline-flex">
+      <div className="w-[100px] h-[100px] relative bg-slate-950 rounded-[100px]" />
+      <div className="w-[243px] text-stone-900 text-[32px] font-extrabold font-['Orbitron']">Game Design</div>
+    </div>
+    <div className="w-[373px] px-[65px] pt-[60px] pb-[191px] bg-blue-400 rounded-[20px] flex-col justify-center items-center gap-[51px] inline-flex">
+      <div className="w-[100px] h-[100px] relative bg-slate-950 rounded-[100px]" />
+      <div className="w-[243px] text-stone-900 text-[32px] font-extrabold font-['Orbitron']">3D modelling</div>
+    </div>
+    <div className="w-[373px] px-[65px] pt-[60px] pb-[191px] bg-purple-400 rounded-[20px] flex-col justify-center items-center gap-[51px] inline-flex">
+      <div className="w-[100px] h-[100px] relative bg-slate-950 rounded-[100px]" />
+      <div className="w-[243px] text-stone-900 text-[32px] font-extrabold font-['Orbitron']">Level Design</div>
+    </div>
+  </div>
+</div>
+
 <hr className="my-10 md:my-20 lg:my-32" />
+
 
       </div>
     </>
