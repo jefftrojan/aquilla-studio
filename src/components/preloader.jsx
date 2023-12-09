@@ -10,13 +10,13 @@ function PreLoader() {
     }, [] )
   return (
     <div className='preloader'>
-        <div className='texts-container'>
-            <img src={logo} alt='logo' className='logo text-color-red' />
+    <div className='texts-container'>
+    <p className="text-white sm:px-4 py-1 mr-1 z-10 sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl">AQUILA</p>
+    <span className="bg-white text-black rounded-xl px-2 py-1 relative z-10 text-2xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl">STUDIO</span>
 
-            
 
-        </div>
     </div>
+</div>
   )
 }
 
