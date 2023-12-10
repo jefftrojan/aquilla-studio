@@ -108,24 +108,34 @@ const Program = () => {
     
   </div>
 </div>
+<div className="bg-slate-950 min-h-screen flex items-center justify-center">
+      <div className="w-full max-w-[1440px] p-[90px] lg:p-[120px] flex flex-col items-center gap-[112px]">
+        <div className="w-[386px] text-neutral-100 text-5xl font-black font-orbitron text-center">What we do</div>
 
-<div className="w-[1440px] h-[895px] pl-[120px] pr-[121px] pt-[90px] pb-[131px] bg-slate-950 flex-col justify-center items-center gap-[172px] inline-flex">
-  <div className="w-[386px] text-neutral-100 text-5xl font-black font-['Orbitron']">What we do</div>
-  <div className="self-stretch justify-center items-center gap-10 inline-flex">
-    <div className="w-[373px] px-[65px] pt-[60px] pb-[191px] bg-cyan-300 rounded-[20px] flex-col justify-center items-center gap-[51px] inline-flex">
-      <div className="w-[100px] h-[100px] relative bg-slate-950 rounded-[100px]" />
-      <div className="w-[243px] text-stone-900 text-[32px] font-extrabold font-['Orbitron']">Game Design</div>
+        <div className="flex flex-col lg:flex-row gap-10">
+          <div className="w-full lg:w-1/2 px-8 pt-8 pb-16 bg-cyan-300 rounded-md flex flex-col items-center gap-8">
+            <div className="w-24 h-24 bg-slate-950 rounded-full"></div>
+            <div className="text-stone-900 text-2xl font-extrabold font-orbitron text-center">Game Design</div>
+          </div>
+
+          <div className="w-full lg:w-1/2 px-8 pt-8 pb-16 bg-blue-400 rounded-md flex flex-col items-center gap-8">
+            <div className="w-24 h-24 bg-slate-950 rounded-full"></div>
+            <div className="text-stone-900 text-2xl font-extrabold font-orbitron text-center">3D Modelling</div>
+          </div>
+
+          <div className="w-full lg:w-1/2 px-8 pt-8 pb-16 bg-purple-400 rounded-md flex flex-col items-center gap-8">
+            <div className="w-24 h-24 bg-slate-950 rounded-full"></div>
+            <div className="text-stone-900 text-2xl font-extrabold font-orbitron text-center">Level Design</div>
+          </div>
+
+          <div className="w-full lg:w-1/2 px-8 pt-8 pb-16 bg-purple-400 rounded-md flex flex-col items-center gap-8">
+            <div className="w-24 h-24 bg-slate-950 rounded-full"></div>
+            <div className="text-stone-900 text-2xl font-extrabold font-orbitron text-center">Level Design</div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div className="w-[373px] px-[65px] pt-[60px] pb-[191px] bg-blue-400 rounded-[20px] flex-col justify-center items-center gap-[51px] inline-flex">
-      <div className="w-[100px] h-[100px] relative bg-slate-950 rounded-[100px]" />
-      <div className="w-[243px] text-stone-900 text-[32px] font-extrabold font-['Orbitron']">3D modelling</div>
-    </div>
-    <div className="w-[373px] px-[65px] pt-[60px] pb-[191px] bg-purple-400 rounded-[20px] flex-col justify-center items-center gap-[51px] inline-flex">
-      <div className="w-[100px] h-[100px] relative bg-slate-950 rounded-[100px]" />
-      <div className="w-[243px] text-stone-900 text-[32px] font-extrabold font-['Orbitron']">Level Design</div>
-    </div>
-  </div>
-</div>
+
 
 <hr className="my-10 md:my-20 lg:my-32" />
 

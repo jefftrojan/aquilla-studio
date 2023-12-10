@@ -53,20 +53,18 @@ const whatwedo = [
   {
     name: "Game Development",
     description:
-    "The game development process typically requires input from one or more game designers, artists, programmers, animators, testers, project managers, etc,. though some games have been created by just one or two game developers.",
+    "Fusion of multidisciplinary process of conceptualizing, designing, creating, and refining interactive digital experiences through creativity, and storytelling to craft engaging, immersive, and entertaining games.",
     
     image: simage1,
   },
   {
-    name: "Level Design",
-    description:
-    "The game development process typically requires input from one or more game designers, artists, programmers, animators, testers, project managers, etc,.",
+    name: "Game Design",
+    description: "Creating innovative and engaging video game experiences through creative design and programming which utilizing 3D software to create compelling storytelling that resonates with Africans.",
     image: simage2,
   },
   {
-    name: "3D Modelling",
-    description:
-    "The game development process typically requires input from one or more game designers, artists, programmers, animators, testers, project managers, etc,. though some games have been created by just one or two game developers.",
+    name: "Game Production",
+    description: "Crafting levels and puzzles to challenge players and drive the story of innovative games forward from building the game from concept to completion.",
     
     image: simage3,
   },

@@ -6,82 +6,42 @@ const Footer = () => {
 
   return (
     <footer className="bg-primary text-gray-100 py-12">
-      <div className="max-w-screen-xl mx-auto px-8 md:px-12 lg:px-16 xl:px-32">
-
-        <div className="flex flex-col md:flex-row">
-          
-          {/* Left Section - Social Media Icons */}
-          <div className="md:w-1/2">
-          <div className="mt-20" />
-
-          <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
-
-
-          <p> G4DT is a learning program to empower tech talents to learn the principles of game </p>
-          <div className="mt-10" />
-            <h2 className="text-2xl font-bold mb-4">Social Media</h2>
-
-              
-            <div className="flex items-center space-x-7">
-              {/* Use React Icons for social media */}
-              <a href="#" className="text-gray-100 hover:text-indigo-500">
-                <FaFacebook />
-              </a>
-              <a href="#" className="text-gray-100 hover:text-indigo-500">
-                <FaTwitter />
-              </a>
-              <a href="#" className="text-gray-100 hover:text-indigo-500">
-                <FaInstagram />
-              </a>
-              {/* Add more social media icons as needed */}
-            </div>
-          </div>
-
-          {/* Right Section - Contact Form */}
-          <div className="md:w-1/2 mt-8 md:mt-0 bg-primary text-white rounded-lg shadow-lg p-8">
-            <form>
-              <div className="mb-4">
-                <label htmlFor="fullName" className="block text-white font-bold mb-2">Full Name</label>
-                <input
-                  type="text"
-                  id="fullName"
-                  className="w-full bg-gray-300 text-gray-900 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                  placeholder="Your Full Name"
-                />
-              </div>
-              <div className="mb-4">
-                <label htmlFor="email" className="block text-white font-bold mb-2">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  className="w-full bg-gray-300 text-white p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                  placeholder="Your Email"
-                />
-              </div>
-              <div className="mb-4">
-                <label htmlFor="message" className="block text-white font-bold mb-2">Message</label>
-                <textarea
-                  id="message"
-                  rows="4"
-                  className="w-full h-32 bg-gray-300 text-white p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                  placeholder="Your Message"
-                ></textarea>
-              </div>
-              <div>
-                <button
-                  type="submit"
-                  className="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline"
-                >
-                  Send Message
-                </button>
-              </div>
-            </form>
-          </div>
+<div className="w-[1440px] h-[712px] px-[120px] py-[107px] bg-slate-950 flex-col justify-start items-start gap-2.5 inline-flex">
+    <div className="justify-start items-start gap-[78px] inline-flex">
+        <div className="flex-col justify-start items-start gap-[30px] inline-flex">
+            <div className="w-[386px] text-neutral-100 text-5xl font-black font-['Orbitron']">Contact us</div>
+            <div className="w-[532px] text-zinc-400 text-2xl font-medium font-['Exo']">GD4T is a learning program to empower tech talents to learn the principles of game development, and create new tech opportunities toward career pathways</div>
         </div>
+        <div className="flex-col justify-start items-start gap-[30px] inline-flex">
+            <div className="justify-start items-start gap-5 inline-flex">
+                <div className="flex-col justify-start items-start gap-[22px] inline-flex">
+                    <div className="w-[79px] text-zinc-400 text-2xl font-medium font-['Exo']">Name</div>
+                    <div className="w-[285px] h-[50px] relative bg-white" />
+                </div>
+                <div className="flex-col justify-start items-start gap-[22px] inline-flex">
+                    <div className="w-[79px] text-zinc-400 text-2xl font-medium font-['Exo']">Name</div>
+                    <div className="w-[285px] h-[50px] relative bg-white" />
+                </div>
+            </div>
+            <div className="flex-col justify-start items-start gap-5 flex">
+                <div className="flex-col justify-start items-start gap-1.5 flex">
+                    <div className="w-[105px] text-zinc-400 text-2xl font-medium font-['Exo']">Message</div>
+                    <div className="w-[590px] h-64 relative bg-white" />
+                </div>
+                <div className="justify-start items-end gap-[18px] inline-flex">
+                    <div className="w-[419px] text-zinc-400 text-lg font-medium font-['Exo']">GD4T is a learning program to empower tech talents to learn the principles of game </div>
+                    <div className="h-[50px] pl-[53px] pr-[54px] py-[13px] bg-blue-500 rounded-[10px] justify-center items-center flex">
+                        <div className="text-white text-lg font-semibold font-['Exo']">SEND</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
         <div className="text-center mt-8">
           &copy; {currentYear}, AQUILA STUDIO | All Rights Reserved.
         </div>
-      </div>
     </footer>
   );
 };
