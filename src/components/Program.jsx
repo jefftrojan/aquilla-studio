@@ -130,9 +130,11 @@ const Program = () => {
     src={gd4tkid}
     alt="image"
     className="rounded-lg mb-10 md:mb-0"
-    style={{ width: "100%", maxWidth: "500px", height: "450px" }}
+    style={{ width: "100%", maxWidth: "450px", height: "380px" }}
   /> 
-<div className="flex flex-col mt-10 items-center justify-center text-center">
+
+<div className="w-[500px] text-white text-[32px] flex justify-center items-center font-black font-['Orbitron']">Start your application to join a thriving community.</div>
+{/* <div className="flex flex-col mt-10 items-center justify-center text-center">
    <div>
    <h4 className="mt-10 md:mt-10 text-2xl md:text-2xl lg:text-3xl font-bold ">
        <p> Start your application to join a thriving community...  </p>
@@ -141,13 +143,8 @@ const Program = () => {
     <div className="mt-10" />
 
     
-  </div>
+  </div> */}
 </div> 
-
-
-
-<hr className="my-10 md:my-20 lg:my-32" />
-
 
       </div>
     </>
