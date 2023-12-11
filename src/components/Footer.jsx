@@ -39,6 +39,8 @@ const Footer = () => {
                             <div className="w-full flex-col justify-start items-start gap-1.5 flex">
                                 <div className="w-full text-zinc-400 text-lg sm:text-2xl font-medium font-['Exo']">Message</div>
                                 <textarea type="textarea" id="textarea" className="w-full h-32 sm:h-64 relative bg-white text-black" />
+                                <ValidationError field="message" prefix="message" errors={state.errors} />
+
                             </div>
                             <div className="sm:flex justify-between items-end gap-[18px] w-full">
                                 <div className="w-full text-zinc-400 text-sm sm:text-lg font-medium font-['Exo']">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply. </div>
