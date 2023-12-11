@@ -7,7 +7,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   const [state, handleSubmit] = useForm("mqkvrwlv");
   if (state.succeeded) {
-      return <p>Message Sent Successfully!</p>;
+      alert('Message sent successfully')
       
   }
 
