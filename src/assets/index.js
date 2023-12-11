@@ -16,6 +16,12 @@ import simage1 from "./service-card-image-1.jpg";
 import simage2 from "./simage2.jpg";
 import simage3 from "./service-card-image-3.jpg";
 import girlheadset from "./girlheadset.jpg";
+import learning from "./learning.png";
+import consulting from "./consulting.png";
+import localization from "./localization.png";
+import mentorship from "./mentorship.png";
+
+
 
 export {
   logo,
@@ -35,5 +41,10 @@ export {
   cynthia,
   jubril,
   girlheadset,
+  learning,
+  consulting,
+  localization,
+  mentorship,
+  
   
 };
