@@ -49,16 +49,17 @@ const Footer = () => {
         <div className="sm:w-[50%] w-full sm:text-right text-left">
             <div className="text-zinc-400 text-lg sm:text-[32px] font-medium font-['Exo'] mb-4">Follow us</div>
             <div className="flex justify-start sm:justify-end items-center gap-[30px]">
-                <div className="w-[50px] h-[50px] flex justify-center items-center">
-                    <FaLinkedin className="text-[25px] text-blue-500"/>
-                </div>
-                <div className="w-[50px] h-[50px] flex justify-center items-center">
-                    <FaTwitter className="text-[25px] text-blue-500"/>
-                </div>
-                <div className="w-[50px] h-[50px] flex justify-center items-center">
-                    <FaInstagram className="text-[25px] text-blue-500"/>
-                </div>
-            </div>
+    <a href="https://www.linkedin.com/in/aquila-studio-46490026b/" target="_blank" rel="noopener noreferrer" className="w-[50px] h-[50px] flex justify-center items-center">
+        <FaLinkedin className="text-[25px] text-blue-500"/>
+    </a>
+    <a href="https://twitter.com/aquilastudiorw" target="_blank" rel="noopener noreferrer" className="w-[50px] h-[50px] flex justify-center items-center">
+        <FaTwitter className="text-[25px] text-blue-500"/>
+    </a>
+    <a href="https://www.instagram.com/aquilastudiorw" target="_blank" rel="noopener noreferrer" className="w-[50px] h-[50px] flex justify-center items-center">
+        <FaInstagram className="text-[25px] text-blue-500"/>
+    </a>
+</div>
+
         </div>
     </div>
 </div>
