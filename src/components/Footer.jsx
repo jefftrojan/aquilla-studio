@@ -8,6 +8,7 @@ const Footer = () => {
   const [state, handleSubmit] = useForm("mqkvrwlv");
   if (state.succeeded) {
       return <p>Message Sent Successfully!</p>;
+      
   }
 
   return (
@@ -38,7 +39,7 @@ const Footer = () => {
                         <div className="w-full flex-col justify-start items-start gap-5 flex">
                             <div className="w-full flex-col justify-start items-start gap-1.5 flex">
                                 <div className="w-full text-zinc-400 text-lg sm:text-2xl font-medium font-['Exo']">Message</div>
-                                <textarea type="textarea" id="textarea" className="w-full h-32 sm:h-64 relative bg-white text-black" />
+                                <textarea name="message" id="message" className="w-full h-32 sm:h-64 relative bg-white text-black" />
                                 <ValidationError field="message" prefix="message" errors={state.errors} />
 
                             </div>
@@ -46,6 +47,7 @@ const Footer = () => {
                                 <div className="w-full text-zinc-400 text-sm sm:text-lg font-medium font-['Exo']">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply. </div>
                                 <div className="h-[40px] sm:h-[50px] pl-[16px] pr-[16px] py-[8px] bg-blue-500 rounded-[8px] justify-center items-center flex">
                                     <button type="submit" disabled={state.submitting} className="text-white text-lg font-semibold font-['Exo']">SEND</button>
+                                    
                                 </div>
                             </div>
                         </div>
