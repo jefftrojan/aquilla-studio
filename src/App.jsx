@@ -1,5 +1,5 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import ContactForm from "./components/ContactForm";
@@ -7,7 +7,6 @@ import { Studio, Program, Hero, Games, StarsCanvas, OurServices } from "./compon
 import PreLoader from "./components/preloader";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-
 
 const staggerContainer = () => {
   return {
@@ -22,40 +21,39 @@ const staggerContainer = () => {
   };
 };
 
-const App = () => {
-  // Define animation properties
-  const animationProps = {
-    variants: staggerContainer(),
-    initial: 'hidden',
-    whileInView: 'show',
-    viewport: { once: true, amount: 0.1 },
-  };
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
 
-  return ( 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
+
+const App = () => {
+  return (
     <>
-    <Router>
-      <PreLoader />
-      <div className='relative z-0 bg-primary'>
+      <Router>
+        <PreLoader />
+        <div className='relative z-0 bg-primary'>
           <Navbar />
           <StarsCanvas />
 
+          <ScrollToTop />
 
-
-                <Routes>
-                  <Route path="/" element={<motion.div> <Hero /> </motion.div>} />
-                  <Route path="/studio" element={<motion.div> <Studio /> </motion.div>} />
-                  <Route path="/program" element={<motion.div> <Program /> </motion.div>} />
-                  <Route path="/games" element={<motion.div> <Games /> </motion.div>} />
-                </Routes>
-            
-          
+          <Routes>
+            <Route path="/" element={<motion.div> <Hero /> </motion.div>} />
+            <Route path="/studio" element={<motion.div> <Studio /> </motion.div>} />
+            <Route path="/program" element={<motion.div> <Program /> </motion.div>} />
+            <Route path="/games" element={<motion.div> <Games /> </motion.div>} />
+          </Routes>
         </div>
 
-        
-        <motion.div {...animationProps}>
+        <motion.div>
           <Footer />
         </motion.div>
-    </Router>
+      </Router>
     </>
   );
 };
