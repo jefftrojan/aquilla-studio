@@ -5,6 +5,7 @@ import { styles } from "../styles";
 import { play, igihe, eranko } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import Footer from "./Footer";
 
 const ProjectCard = ({
   index,
@@ -142,6 +143,7 @@ const Games = () => {
 
 <hr className='my-20' />
       </div>
+      <Footer />
 
 
       

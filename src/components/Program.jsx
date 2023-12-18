@@ -7,6 +7,7 @@ import { gd4tkid, girlheadset,learning, mentorship, localization, consulting } f
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import Footer from "./Footer";
 
 
 
@@ -133,7 +134,7 @@ const Program = () => {
     style={{ width: "100%", maxWidth: "450px", height: "380px" }}
   /> 
 
-<div className="w-[500px] text-white text-[32px] flex justify-center items-center font-black font-['Orbitron']">Start your application to join a thriving community.</div>
+<div className="w-[500px] text-white sm:text-[18] text-[28px] flex justify-center items-center font-black font-['Orbitron']">Start your application to join a thriving community.</div>
 {/* <div className="flex flex-col mt-10 items-center justify-center text-center">
    <div>
    <h4 className="mt-10 md:mt-10 text-2xl md:text-2xl lg:text-3xl font-bold ">
@@ -147,6 +148,7 @@ const Program = () => {
 </div> 
 
       </div>
+     <Footer />
     </>
   );
 };

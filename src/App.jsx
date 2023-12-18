@@ -50,9 +50,7 @@ const App = () => {
           </Routes>
         </div>
 
-        <motion.div>
-          <Footer />
-        </motion.div>
+       
       </Router>
     </>
   );

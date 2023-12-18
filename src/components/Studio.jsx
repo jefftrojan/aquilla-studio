@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import MeetTheTeam from "./TeamMembers";
+import Footer from "./Footer";
 
 
 
@@ -78,6 +79,7 @@ Aquila Studio is an independent video game studio dedicated to creating innovati
 <MeetTheTeam />
 <div className="mt-20" />
     </div>
+    <Footer />
 
 
 

@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { whatwedo } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import Footer from "./Footer";
 
 const ProjectCard = ({
   index,
@@ -66,6 +67,7 @@ const OurServices = () => {
         ))}
       </div>
       <hr className='mt-20' />
+      <Footer/>
     </>
   );
 };

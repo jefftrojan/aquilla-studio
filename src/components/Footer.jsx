@@ -11,10 +11,10 @@ const Footer = () => {
   }
 
   return (
-    <footer className="bg-primary text-gray-100 py-12">
+    <footer className="bg-primary text-gray-100 py-12 z-10">
       <form onSubmit={handleSubmit}>
 
-        <div className="container mx-auto px-20 py-8 sm:py-12 bg-slate-950 flex-col justify-start items-start gap-2.5 inline-flex">
+        <div className="container mx-auto px-10 py-8 sm:py-12 bg-slate-950 flex-col justify-start items-start gap-2.5 inline-flex">
           <div className="sm:flex-row flex-col justify-start items-start gap-[30px] inline-flex w-full">
             <div className="sm:w-[50%] w-full flex-col justify-start items-start gap-[30px] inline-flex">
               <div className="w-full text-5xl font-black font-orbitron">Contact us</div>
