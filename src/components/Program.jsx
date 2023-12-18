@@ -145,7 +145,11 @@ const Program = () => {
     </h4>
   </div>
   <div className="mt-10" />
+
+  <hr className='my-20' />
+
 </div>
+
 
 </div> 
 
