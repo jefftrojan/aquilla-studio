@@ -126,7 +126,7 @@ const Program = () => {
 
   
 </div>
-<div className="mt-10 md:mt-20 lg:mt-32 flex flex-col md:flex-row-reverse xl:flex-row-reverse justify-center">
+<div className="mt-10 leading-loose md:mt-20 lg:mt-32 flex flex-col md:flex-row-reverse xl:flex-row-reverse justify-center">
   <img
     src={gd4tkid}
     alt="image"
@@ -134,17 +134,19 @@ const Program = () => {
     style={{ width: "100%", maxWidth: "450px", height: "380px" }}
   /> 
 
-<div className="w-[500px] text-white sm:text-[18] text-[28px] flex justify-center items-center font-black font-['Orbitron']">Start your application to join a thriving community.</div>
-{/* <div className="flex flex-col mt-10 items-center justify-center text-center">
-   <div>
-   <h4 className="mt-10 md:mt-10 text-2xl md:text-2xl lg:text-3xl font-bold ">
-       <p> Start your application to join a thriving community...  </p>
-      </h4>
-   </div>
-    <div className="mt-10" />
+{/* <div className="w-full lg:mt-40 md:mt-20 lg:text-[32px] max-w-[500px] text-white text-lg sm:text-base sm:whitespace-normal mx-auto text-center font-black font-orbitron leading-loose">
+  Start your application to join a thriving community.
+</div> */}
 
-    
-  </div> */}
+<div className="flex flex-col mt-10 items-center justify-center text-center pr-10">
+  <div>
+    <h4 className="lg:mt-20 md:mt-10 text-2xl md:text-2xl lg:text-3xl font-bold ">
+      <p> Start your application to join <br/>  a thriving community...  </p>
+    </h4>
+  </div>
+  <div className="mt-10" />
+</div>
+
 </div> 
 
       </div>

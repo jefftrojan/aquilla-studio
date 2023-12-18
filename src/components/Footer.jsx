@@ -11,13 +11,14 @@ const Footer = () => {
   }
 
   return (
-    <footer className="bg-primary text-gray-100 py-12 z-10">
+    <footer className="bg-primary text-gray-100 py-12">
       <form onSubmit={handleSubmit}>
 
         <div className="container mx-auto px-10 py-8 sm:py-12 bg-slate-950 flex-col justify-start items-start gap-2.5 inline-flex">
           <div className="sm:flex-row flex-col justify-start items-start gap-[30px] inline-flex w-full">
             <div className="sm:w-[50%] w-full flex-col justify-start items-start gap-[30px] inline-flex">
-              <div className="w-full text-5xl font-black font-orbitron">Contact us</div>
+              <div className="w-full text-5xl font-black font-orbitron">Contact Us</div>
+              <div className="mt-12" />
               <div className="w-full text-2xl font-medium font-exo">Thanks for your interest in Aquila Studio! Please provide us with your contact information and a brief description of your inquiry so that our team can help. We look forward to hearing from you!</div>
             </div>
             <div className="sm:w-[50%] w-full flex-col justify-start items-start gap-5 inline-flex">
@@ -55,27 +56,28 @@ const Footer = () => {
       </form>
 
       <div className="container mx-auto px-4 pt-8 pb-4 sm:pt-12 bg-slate-950 relative">
-        <div className="sm:flex justify-start items-start gap-[30px] w-full">
-          <div className="sm:w-[50%] w-full h-[122px] sm:mb-0 mb-4 flex-col justify-start items-start gap-[30px] inline-flex">
-            <div className="w-full text-3xl font-black font-orbitron">Aquila Studio</div>
-            <div className="w-full text-2xl font-medium font-exo">&copy; {currentYear}, All rights reserved.</div>
-          </div>
-          <div className="sm:w-[50%] w-full sm:text-right text-left">
-            <div className="text-lg font-medium font-exo mb-4 pt-4 px-12">Follow us</div>
-            <div className="flex justify-start sm:justify-end items-center gap-[30px]">
-              <a href="https://www.linkedin.com/in/aquila-studio-46490026b/" target="_blank" rel="noopener noreferrer" className="w-[50px] h-[50px] flex justify-center items-center">
-                <FaLinkedin className="text-[25px] text-blue-500" />
-              </a>
-              <a href="https://twitter.com/aquilastudiorw" target="_blank" rel="noopener noreferrer" className="w-[50px] h-[50px] flex justify-center items-center">
-                <FaTwitter className="text-[25px] text-blue-500" />
-              </a>
-              <a href="https://www.instagram.com/aquilastudiorw" target="_blank" rel="noopener noreferrer" className="w-[50px] h-[50px] flex justify-center items-center">
-                <FaInstagram className="text-[25px] text-blue-500" />
-              </a>
-            </div>
-          </div>
-        </div>
+  <div className="sm:flex justify-start items-start gap-[30px] w-full">
+    <div className="sm:w-[50%] w-full h-[122px] sm:mb-0 mb-4 flex-col justify-start items-start gap-[30px] inline-flex">
+      <div className="w-full text-3xl font-black font-orbitron">Aquila Studio</div>
+      <div className="w-full text-2xl font-medium font-exo">&copy; {currentYear}, All rights reserved.</div>
+    </div>
+    <div className="sm:w-[50%] w-full sm:text-right text-left mx-auto sm:mx-0 px-20">
+      <div className="text-lg font-medium font-exo mb-4 pt-4 px-12">Follow us</div>
+      <div className="flex justify-start sm:justify-end items-center gap-[30px]">
+        <a href="https://www.linkedin.com/in/aquila-studio-46490026b/" target="_blank" rel="noopener noreferrer" className="w-[50px] h-[50px] flex justify-center items-center">
+          <FaLinkedin className="text-[25px] text-blue-500" />
+        </a>
+        <a href="https://twitter.com/aquilastudiorw" target="_blank" rel="noopener noreferrer" className="w-[50px] h-[50px] flex justify-center items-center">
+          <FaTwitter className="text-[25px] text-blue-500" />
+        </a>
+        <a href="https://www.instagram.com/aquilastudiorw" target="_blank" rel="noopener noreferrer" className="w-[50px] h-[50px] flex justify-center items-center">
+          <FaInstagram className="text-[25px] text-blue-500" />
+        </a>
       </div>
+    </div>
+  </div>
+</div>
+
     </footer>
   );
 };
